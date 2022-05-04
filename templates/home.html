@@ -1,0 +1,93 @@
+<html>
+
+<head>
+	<title> Students_Performance Predictor App by Prasad Bhange</title>
+	<style>
+		*{font-size:30px;font-family:Courier;background-color:lightyellow;}
+		hr.new1{ border-top:2px dashed black;width:40%;}
+		hr.new2{ border-top:2px dashed black;width:40%;}
+		hr.new3{ border-top:2px dashed black;width:40%;}
+		hr.new4{ border-top:2px dashed black;width:40%;}
+		hr.new5{ border-top:2px dashed black;width:40%;}
+		p{color:darkgreen}
+		input[type=submit]{
+		background-color:#4CAF50;
+		border-radius:12px;
+		color:white;
+		display:inline-block;}
+	</style>
+	<link rel="icon" href="image/student.png">
+</head>
+
+<body>
+
+<center>
+	<h1 style="color:blue";>Prediction of Student's reading & writing score from his/her entered data</h1>
+</center>
+	<form method="POST" action="/logout">
+	<input type="submit" value="Logout" style="float:right;cursor:pointer;margin-right:100px;padding-left:20px;top:10px;"position:fixed;"></input>
+	<br><br>
+	</form>
+<center>
+	<h2 style="color:orange";>Enter Student's Data</h2>
+</center>
+	
+<center>
+	<h1 style="font-style:italic;font-weight:bold;color:red;">Welcome {{name}}</h1>
+
+</center>
+
+<center>
+	<center>
+	<h2>reading_score <--> writting_score</h2>
+	<br>
+		|			|
+	<br>
+		V			V
+	<br>
+	{{msg}}	
+</center>
+	<form action="/check">
+	<hr class="new5">
+	<hr class="new5">
+	<p style="color:green";><b>Choose Gender</b></p>
+	<input type="radio" name="r1" value="male" required> Male </input>
+	<input type="radio" name="r1" value="female"> Female</input>
+	<br>
+	<hr class="new1">
+
+	<p><b>Choose Race/Ethnicity</b></p>
+	<input type="radio" name="r2" value="a" required> Group-A </input>
+	<input type="radio" name="r2" value="b"> Group-B </input>
+	<br>
+	<input type="radio" name="r2" value="c"> Group-C </input>
+	<input type="radio" name="r2" value="d"> Group-D </input>
+	<br>
+	<input type="radio" name="r2" value="e"> Group-E </input>
+
+	<hr class="new2">
+
+	<p><b>Choose Lunch</b></p>
+	<input type="radio" name="r3" value="std" required> Standard </input>
+	<input type="radio" name="r3" value="free"> Free/Reduced </input>
+	<br>
+	<hr class="new3">
+
+	<p><b>Choose Test_Preparation course</b></p>
+	<input type="radio" name="r4" value="none" required> None </input>
+	<input type="radio" name="r4" value="completed"> Completed </input>
+	<br>
+	<hr class="new4">
+
+	<p><b>Enter Maths Score</b></p>
+	<input type="number" step="any" name="math" placeholder="maths marks" required>
+	<br><br>
+
+	<input type="Submit" value="Get Score" style="cursor:pointer";></input>
+	</form>
+	
+<center>
+
+</body>
+
+
